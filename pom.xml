@@ -7,7 +7,6 @@
 		<groupId>com.thoughtworks</groupId>
 	    <artifactId>petstore</artifactId>
 	    <version>0.0.3-SNAPSHOT</version>
-		<relativePath>..</relativePath>
 	</parent>
 	<artifactId>order-service</artifactId>
 
@@ -23,7 +22,7 @@
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 
-		<!-- Spring Data -->
+		<!-- spring Data -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-mongodb</artifactId>
@@ -41,6 +40,8 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>${swagger2.version}</version>
 		</dependency>
+
+        <!-- kotlin -->
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jre8</artifactId>
