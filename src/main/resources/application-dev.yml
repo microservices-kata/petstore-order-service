@@ -1,0 +1,16 @@
+---
+spring:
+  profiles: dev
+  data:
+    mongodb:
+      host: 10.202.129.46
+      port: 27017
+      username: root
+      password: root
+      database: petstore-order
+      authenticationDatabase: admin
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.202.129.46:8761/eureka/
+

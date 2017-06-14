@@ -22,33 +22,3 @@ logging:
 app:
   lang: "Kotlin!"
 
-
----
-spring:
-  profiles: local
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      database: petstore-order
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-
----
-spring:
-  profiles: dev
-  data:
-    mongodb:
-      host: 10.202.128.102
-      port: 27017
-      username: root
-      password: root
-      database: petstore-order
-      authenticationDatabase: admin
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://10.202.128.102:8761/eureka/
-
